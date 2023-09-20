@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  arch_kasmvnc_logseq:
+    build: .
+    image: arch_kasmvnc_logseq:latest
+    ports:
+      - "5900:5900"
+    volumes:
+      - /home/lzieniew/Documents/logseq_kasmvnc:/logseq-notes
